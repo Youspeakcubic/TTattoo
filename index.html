@@ -4,10 +4,18 @@
 <head>
   <link rel="stylesheet" href="assets\CSS\style.css">
   </link>
+  <!-- google fonts links -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+  <!-- bootstrap styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- font awesome script -->
+  <script src="https://kit.fontawesome.com/a29b76debe.js" crossorigin="anonymous"></script>
+  <!-- mapbox api -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
   <meta charset="utf-8">
   <title>Twisted Tattoo San Antonio</title>
 </head>
@@ -143,7 +151,111 @@
         <p class="lead">
           Infant ear piercing available most days, please call ahead.
         </p>
-                <a class="btn btn-primary btn-lg bg-dark" href="https://twistedtattootx.formstack.com/forms/price_quote_copy" role="button">Piercing pricing info</a>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Piercing Pricing
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+
+      Angel Kiss(ashley)
+      $75
+      Anti-Eyebrow
+      $50
+      Anti-Tragus
+      $50
+      Bridge of nose
+      $50
+      Canine Bites
+      $100
+      Cartilage
+      $40
+      Cheeks/Dimples (metal)
+      $80
+      Cheeks/Dimples (ptfe)
+      $100
+      Child's Lobes (infant to 12yrs)
+      $75-$95
+      Conch
+      $50
+      Daith
+      $40
+      Dermal lrg jewel
+      $85
+      Dermal med jewel
+      $75
+      Dermal Removal
+      $35-$60
+      Dermal sm jewel
+      $65
+      Dermal stud
+      $55
+      Eyebrow
+      $30
+      Fem Christina
+      $150
+      Fem VCH/Hood
+      $175
+      Forward Helix
+      $40
+      Industrial
+      $40
+      Lip/Labret
+      $75
+      Lobe
+      $30-$40
+      Lobes
+      $40-$60
+      Medusa
+      $75
+      Monroe
+      $75
+      Navel
+      $40
+      Nipple
+      $40
+      Nipples
+      $50
+      Nostril
+      $30-$40
+      Orbital
+      $50
+      Rook
+      $40
+      Septum
+      $75
+      Shark Bites
+      $100
+      Smiley
+      $75
+      Snake Bites
+      $75
+      Spider Bites
+      $100
+      Surface
+      $50
+      Tip of Tongue/Scoop
+      $75
+      Tongue
+      $75
+      Tragus
+      $40
+      Tranverse Lobe
+      $50
+      Vertical Labret
+      $75
+      Prince Albert
+      $175
+      Jacob's Ladder
+      $150
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-5 order-md-1">
         <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="assets\images\feature2.jpg" data-holder-rendered="true">
@@ -155,25 +267,36 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">New powder brows <span class="text-muted">by Kristen.</span></h2>
+        Ombre Powder Brows is a form of tattooing, but it is different from the traditional method. It is a more modern method because it is surface work meaning it is on the epidermis layer of the skin. The technique is described by it’s name – the
+        results are more powdery and fluffy with a faded front and a crisp tail --- and looks like you have makeup on! Because it does not penetrate deep into the dermis layer of the skin, the results will last UP TO 1-3 years depending on skin type
+        and lifestyle. All results vary.
       </div>
       <div class="col-md-5">
         <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="assets\images\feature3.jpg" data-holder-rendered="true">
       </div>
     </div>
+    <hr />
 
     <!-- footer -->
 
     <footer>
       <div class="row">
-        <div class=" col-lg-3 col-sm-6">
+        <div class=" col col-lg-3 col-sm-6">
           <h3>Business Hours</h>
             <ul>
               <li>Sunday: 10:00am - 4:00pm</li>
               <li>Mon-Fri: 10:00am - 6:00pm</li>
               <li>Saturday: 10:00am - 8:00pm</li>
             </ul>
+        </div>
+        <div class="col col-lg-1">
+          <i class="fab fa-instagram"></i>
+          <hr>
+          <i class="fab fa-facebook"></i>
+        </div>
+        <div class="col col-lg-8" id="map">
+
         </div>
       </div>
     </footer>
@@ -183,6 +306,15 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoieW91c3BlYWtjdWJpYyIsImEiOiJja3h1dXRsZ3EwdmFzMm5wZDlkcTZpcnpyIn0.l6YP8_2SQTlTa00kH5icQA';
+      const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-98.51217, 29.54539], // starting position [lng, lat]
+        zoom: 16 // starting zoom
+      });
+    </script>
 
 </body>
 
