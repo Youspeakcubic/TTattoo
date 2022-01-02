@@ -1,11 +1,21 @@
-h1{
+html{
+overflow-x: hidden;
+}
+h1, h2, h3, h4{
   font-family: 'Playfair Display', serif !important;
 }
-h2{
-  font-family: 'Playfair Display', serif !important;
-}
-p{
+p, li{
   font-family: 'Open Sans Condensed', sans-serif;
+}
+ul{
+  font-family: 'Playfair Display', serif !important;
+  list-style-type: none;
+}
+/* navbar */
+.navButton{
+margin:0 3%;
+text-align: right;
+font-size: 1rem !important;
 }
 /* jumbotron styling */
 .jumbotron {
@@ -29,20 +39,93 @@ p{
   margin: 6vh 0 2vh ;
   padding: 0 5vw 0 5vw;
 }
+/* covid banner */
+.covidBanner{
+  margin: 5% 0;
+  padding: 2% 5%;
+  text-align: center;
+  height:10%;
+  background-color: red;
+}
 /* featurette styling */
 .featurette img{
     box-shadow: 10px 5px 5px grey;
 }
+.btn-link{
+  color:black !important;
+  text-decoration-style: solid;
+}
 /* footer */
 footer{
-
+padding: 1%;
 }
 footer h3{
   line-height: 2;
 }
+.mapboxgl-canvas-container {
+
+    height: 20vh;
+
+}
 /* icon styling */
+.fa-phone{
+  color:black;
+  font-size: 40px;
+}
+.fa-viruses{
+  font-size: 50px;
+}
 .fab{
+  padding: 5% 5%;
   width:50px;
-  font-size: 50px;;
-  display: block;
+  font-size: 50px;
+}
+/* mobile rules */
+@media only screen and (max-width: 600px) {
+  /* element mobile styling */
+  ul{
+    font-size-
+  }
+  /* logo mobile styling */
+  #logo{
+    width:50px;
+    height:50px;
+  }
+  /* button mobile styling */
+  .btn-lg{
+    font-size:.75rem !important;
+  }
+  .card{
+    margin:5% 0;
+  }
+  /* covid banner mobile styling */
+  .covidBanner{
+    margin: 40% 0 10%;;
+    padding: 2% 5%;
+    text-align: center;
+    height:10%;
+    background-color: red;
+  }
+  /* icon mobile styling */
+  br{
+    display:none;
+  }
+  .fa-phone{
+    color:black;
+    font-size: 20px;
+  }
+  .fab{
+    width:25px;
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width:601px) and (max-width: 1000px) {
+.covidBanner{
+  margin:20% 0 10%;
+}
+}
+@media only screen and (min-width:1000px) and (max-width: 1600px) {
+.covidBanner{
+  margin:12% 0 10%;
+}
 }
