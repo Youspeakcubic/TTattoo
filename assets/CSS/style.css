@@ -87,9 +87,20 @@ footer h3{
     width:50px;
     height:50px;
   }
+  /* carousel mobile styling */
+  .carousel {
+    height: 70vh;
+  }
+  .carousel h1 , p{
+    color:black;
+  }
+  .caroImg {
+    height: 500px;
+    width: 100%;
+  }
   /* jumbotron mobile styling */
   .jumbotron{
-    margin-bottom: 12rem !important;
+    margin-bottom: 5rem !important;
   }
   .display-4{
     font-size: 1.5rem !important;
@@ -103,7 +114,7 @@ footer h3{
   }
   /* covid banner mobile styling */
   .covidBanner{
-    margin: 45% 0 10%;;
+    margin: 25% 0 10%;;
     padding: 2% 5%;
     text-align: center;
     height:10%;
