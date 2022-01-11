@@ -12,6 +12,9 @@ ul{
   list-style-type: none;
 }
 /* navbar */
+#mainTattooNavbar {
+  padding: 4% 15% ;
+}
 .navButton{
 margin:0 3%;
 text-align: right;
@@ -23,21 +26,10 @@ font-size: 1rem !important;
   text-align: center;
   opacity: 80%;
 }
-
-/* carousel styling */
-.carousel {
-  height: 70vh;
-}
-.carousel h1 , p{
-  color:black;
-}
-.caroImg {
-  height: 700px;
-  width: 100%;
-}
+/* featurette styling */
 .featurette{
-  margin: 6vh 0 2vh ;
-  padding: 0 5vw 0 5vw;
+  margin: 8vh 0 8vh ;
+  padding: 0 15% 0 15%;
 }
 /* covid banner */
 .covidBanner{
@@ -46,6 +38,14 @@ font-size: 1rem !important;
   text-align: center;
   height:10%;
   background-color: red;
+  box-shadow: 10px 5px 5px grey;
+}
+/* second implement styling */
+.mainTattooRow{
+  padding: 2% 15% 5%;
+}
+.tattooGunImg{
+  width:125%;
 }
 /* featurette styling */
 .featurette img{
@@ -54,6 +54,24 @@ font-size: 1rem !important;
 .btn-link{
   color:black !important;
   text-decoration-style: solid;
+}
+/*tattoo testimonial styling */
+#testimonials {
+  text-align: center;
+  background-color: #fff;
+  color:black;
+}
+.testimonialImg{
+  width:10%;
+  border-radius: 100%;
+  margin:20px;
+}
+.carousel{
+  height:50vh !important;
+}
+.carousel-item{
+  height:10%;
+  padding: 7% 15%;
 }
 /* footer */
 footer{
@@ -82,22 +100,31 @@ footer h3{
 }
 /* mobile rules */
 @media only screen and (max-width: 600px) {
+  .wrapper{
+    overflow-x: hidden;
+  }
+  #mainTattooNavbar{
+    padding: 0;
+  }
   /* logo mobile styling */
   #logo{
     width:50px;
     height:50px;
   }
-  /* carousel mobile styling */
-  .carousel {
-    height: 70vh;
+  /* lander */
+  .mainTattooRow{
+    padding: 10% 5%;
   }
-  .carousel h1 , p{
-    color:black;
+  .tattooTextContainer{
+    text-align:center;
   }
-  .caroImg {
-    height: 500px;
-    width: 100%;
+  .tattooGunImg{
+    margin-top: 10%;
   }
+  #mainQuoteTattoo{
+    font-size: 1.25rem !important;
+  }
+
   /* jumbotron mobile styling */
   .jumbotron{
     margin-bottom: 5rem !important;
@@ -119,6 +146,13 @@ footer h3{
     text-align: center;
     height:10%;
     background-color: red;
+  }
+  /* testimonial mobile styling */
+  .carousel{
+    height:40vh !important;
+  }
+  .testimonial-text{
+    font-size: 4vw;
   }
   /* icon mobile styling */
   br{
