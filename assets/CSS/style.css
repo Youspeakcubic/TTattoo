@@ -171,6 +171,12 @@ footer h3{
 .covidBanner{
   margin:20% 0 10%;
 }
+.carousel{
+  height:45vh !important;
+}
+.testimonial-text{
+  font-size: 3vw;
+}
 }
 @media only screen and (min-width:1000px) and (max-width: 1600px) {
 .covidBanner{
